@@ -1,0 +1,185 @@
+html {
+  font-size: 16px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: font-family: 'Ubuntu', sans-serif;
+  background-color:#C5CAE9;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-template: 100px 50px repeat(6, 1fr) / repeat(8, 1fr);
+  border: 1px black dotted; 
+}
+
+header {
+  grid-area: 1 / 1 / 2 / 9;
+  border: 1px black dotted;
+}
+
+nav {
+  grid-area: 2 / 1 / 3 / 9;
+  border: 1px black dotted;
+  display: flex;
+  align-items: center;
+}
+
+.about-me {
+  grid-area: 3 / 1 / 5 / 5;
+  border: 1px black dotted;
+}
+
+.interests {
+  grid-area: 3 / 5 / 5 / 9;
+  border: 1px black dotted;
+  padding-left: 10%;
+}
+
+.image2 {
+  grid-area: 5 / 1 / 8 / 5; 
+  border: 1px black dotted;
+  display: flex;
+  align-items: center;
+}
+
+.image3 {
+  grid-area: 5 / 5 / 8 / 9;
+  border: 1px black dotted;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  grid-area: 8 / 1 / 9 / 9;
+  border: 1px black dotted;
+}
+
+h1 {
+  font-size: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;    
+  color: #000000;
+  text-shadow: 2px 2px 1px rgb(118, 115, 143);
+}
+
+p {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  width: auto;
+}
+
+ul {
+  list-style-type:  circle;
+  list-style-position: inside;
+}
+
+li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+a {
+  margin: 0 auto;
+  align-content: center;
+}
+
+a:link {
+    color: rgb(18, 0, 75);
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    color : blue;
+}
+
+a:active {
+    color: black;
+}
+
+body {
+  margin: 0 auto;
+  width: auto;
+}
+
+.run-animation {
+  position: relative;
+  animation-name: colorize;
+  animation-duration: 5s;
+  color: cubic-bezier(0, 0, .78, .36) 1;
+}
+
+@keyframes colorize {
+  0% {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  100% {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+  }
+}
+
+#Tales {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+
+a#link1 {
+  float: left;
+  margin-left: 10%;
+}
+
+a#link2 {
+  float: center;
+  ;
+}
+
+a#link3 {
+  float: right;
+  margin-right: 10%;
+}
+
+.myDiv {
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+.myslides {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+}
+
+.mycarosel {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+  width: 55%;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+}
